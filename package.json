@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "firebase": "^9.17.1",
+    "firebase": "9.6.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "6",
     "react-scripts": "^5.0.1",
-    "sass": "1.49.7",
-    "yarn": "2.1.4"
+    "sass": "1.49.7"
   },
   "scripts": {
     "start": "react-scripts start",
