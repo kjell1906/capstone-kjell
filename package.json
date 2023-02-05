@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "firebase": "^9.17.1",
+    "node-sass": "^8.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "6",
-    "sass": "^1.58.0"
+    "sass": "^1.58.0",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,7 +18,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "react-scripts": "^2.1.3"
   },
   "browserslist": {
     "production": [
