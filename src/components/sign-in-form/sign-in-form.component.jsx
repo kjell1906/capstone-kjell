@@ -36,7 +36,16 @@ const SignInForm = () => {
             const response = await signInAuthUserWithEmailAndPassword(email, password);
             console.log(response);
         } catch (error) {
-            console.log(error);
+            switch(error.code){
+                case "auth/wrong-password":
+                    alert("incorrect password for email");
+                    break;
+                case "auth/user-not-found":
+                    alert("username not found");
+                    break;
+                default:
+                    console.log(error);
+            }
         }
     }
 
@@ -69,7 +78,7 @@ const SignInForm = () => {
                 />
                 <div className="buttons-container">
                     <Button type="submit">Sign In</Button>
-                    <Button buttonType="google" onClick={signInWithGoogle}>Google sign in</Button>
+                    <Button type="button" buttonType="google" onClick={signInWithGoogle}>Google sign in</Button>
                 </div>
             </form>
         </div>
